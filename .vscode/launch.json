@@ -16,55 +16,50 @@
          {
             "type": "chrome",
             "request": "launch",
+            "name": "Debug Chrome",
+            "url": "http://localhost",
+            "file": "${workspaceFolder}/009.html",
+            "webRoot": "${workspaceFolder}"
+        },
+         {
+            "type": "chrome",
+            "request": "launch",
             "name": "Debug Exercícios 1 - JS",
             "url": "http://localhost",
-            "file": "${workspaceFolder}/tarefas/Exec1/horadia.html",
-            "webRoot": "${workspaceFolder}/tarefas/Exec1/"
+            "file": "${workspaceFolder}/Exercicios/Exec1/horadia.html",
+            "webRoot": "${workspaceFolder}/Exercicios/Exec1/"
         },
- 
-        {
+         {
             "type": "chrome",
             "request": "launch",
             "name": "Debug Exercícios 2 - JS",
             "url": "http://localhost",
-            "file": "${workspaceFolder}/tarefas/Exec2/validaIdade.html",
-            "webRoot": "${workspaceFolder}/tarefas/Exec2/"
+            "file": "${workspaceFolder}/Exercicios/Exec2/validaIdade.html",
+            "webRoot": "${workspaceFolder}/Exercicios/Exec2/"
         },
-        
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Debug Chrome",
-            "url": "http://localhost",
-            "file": "${workspaceFolder}/ex009.html",
-            "webRoot": "${workspaceFolder}"
-        },
- 
-        {
+         {
             "type": "chrome",
             "request": "launch",
             "name": "Debug Exercícios 3 - JS",
             "url": "http://localhost",
-            "file": "${workspaceFolder}/tarefas/Exec3/contador.html",
-            "webRoot": "${workspaceFolder}/tarefas/Exec3/"
+            "file": "${workspaceFolder}/Exercicios/Exec3/contador.html",
+            "webRoot": "${workspaceFolder}/Exercicios/Exec3/"
         },
- 
-        {
+         {
             "type": "chrome",
             "request": "launch",
             "name": "Debug Exercícios 4 - JS",
             "url": "http://localhost",
-            "file": "${workspaceFolder}/tarefas/Exec4/tabuada.html",
-            "webRoot": "${workspaceFolder}/tarefas/Exec4/"
+            "file": "${workspaceFolder}/Exercicios/Exec4/tabuada.html",
+            "webRoot": "${workspaceFolder}/Exercicios/Exec4/"
         },
- 
-        {
+         {
             "type": "chrome",
             "request": "launch",
             "name": "Debug Exercícios 5 - JS",
             "url": "http://localhost",
-            "file": "${workspaceFolder}/tarefas/Exec5/analisaNum.html",
-            "webRoot": "${workspaceFolder}/tarefas/Exec5/"
+            "file": "${workspaceFolder}/Exercicios/Exec5/analisaNum.html",
+            "webRoot": "${workspaceFolder}/Exercicios/Exec5/"
         }
     ]
 }
