@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em JavaScript</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        #cal {
+            font: normal 18pt Arial;
+            background:rgb(156, 155, 153);
+            width: 510px;
+            height: 300px;
+            text-align: center;
+        }
+        input {
+            font: normal 14pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+        .number{
+            margin-right: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .number:focus {
+            background-color: rgb(235, 135, 135);
+        }
+        .button{
+            background: maroon;
+            margin-top: 20px;
+            margin-left: 30px;
+            color: white;
+            padding: 15px 25px;
+            cursor: pointer;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="cal">
+        <h1>Calculadora em JS</h1>
+        Valor 1  <input class="number" name="txtn1" id="txtn1">
+        Valor 2  <input class="number" name="txtn2" id="txtn2">
+        </br>
+        <div id=buttons"> 
+            <button class="button" onclick="soma()">+</button>
+            <button class="button" onclick="subtrai()">-</button>
+            <button class="button" onclick="multiplica()">*</button>
+            <button class="button" onclick="dividi()">/</button>
+        </div>
+        <div id="res">Resultado esperado... </div>
+    </div>
+    <script>
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.querySelector('input#txtn2')
+        var res = window.document.getElementById('res')
+
+        function soma() {
+            var n1 = Number(tn1.value) 
+            var n2 = Number(tn2.value) 
+            var s = n1 + n2
+            res.innerHTML = `A Soma é igual à <strong>${s}</strong>`
+        }
+
+        function subtrai() {
+            var n1 = Number(tn1.value) 
+            var n2 = Number(tn2.value) 
+            var s = n1 - n2
+            res.innerHTML = `A Subtração é igual à <strong>${s}</strong>`
+        }
+
+        function multiplica() {
+            var n1 = Number(tn1.value) 
+            var n2 = Number(tn2.value) 
+            var s = n1 * n2
+            res.innerHTML = `A Multiplicação é igual à <strong>${s}</strong>`
+        }
+
+        function dividi() {
+            var n1 = Number(tn1.value) 
+            var n2 = Number(tn2.value) 
+            var s = n1 / n2
+            res.innerHTML = `A Divisão é igual à <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

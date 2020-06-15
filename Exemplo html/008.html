@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+	#pais {
+		text-transform: uppercase;
+	}
+    </style>
+</head>
+<body>
+	<h1>Qual a sua nacionalidade?</h1>
+	Qual seu País: <input type='text' name='txtpais' id='pais'>
+	<input type='button' value='Analisar' onclick='nacao()'>
+	<div id='res'>
+ 		
+	</div>
+	
+	<script>
+		function nacao() {
+			var txtp = document.querySelector('input#pais')
+			var ret = document.querySelector('div#res')
+			var p = txtp.value.toUpperCase()
+
+			res.innerHTML = `<p>Vivendo em <strong>${p}</strong></p>`
+			if (p != 'BRASIL') {
+				res.innerHTML += `<p>Você é <strong>Estrangeiro</strong></p>`
+				res.innerHTML += '<p>Verifique seu visto - Seja bem vindo!</p>'
+			} else {
+				res.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>`
+			}
+			
+		}
+	</script>
+</body>
+</html>
